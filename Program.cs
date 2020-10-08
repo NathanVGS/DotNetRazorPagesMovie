@@ -13,6 +13,11 @@ namespace RazorPagesMovie
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Hello there");
+            foreach(string arg in args)  
+    {  
+       Console.WriteLine("this is an arg: " + arg);  
+    }  
             CreateHostBuilder(args).Build().Run();
         }
 
